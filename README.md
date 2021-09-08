@@ -20,31 +20,33 @@ auto_scaling_disk_gb_enabled = true
 mongo_db_major_version   	= “4.4”
 mongodb_atlas_database_username = “****”
 mongodb_atlas_database_user_password = “*****”
-
+```
 
 Get a api key and then fill in the param file (previously created)
 
 
 Replace the public and private key and the atlasprojectId got from URL
 
-- public_key = "ATLAS_PRIVATE_KEY"
-- private_key  = "ATLAS_PRIVATE_KEY"
-- atlasprojectid = "ATLAS_PROJECT_ID"
-- cluster_region = "EU-WEST-3"
-- atlas_provider_name = "AWS"
-- atlas_provider_instance_size_name = "M10"
-- auto_scaling_disk_gb_enabled = true
-- mongo_db_major_version       = "4.4"
-- mongodb_atlas_database_username = "DEFINE_MY_USERNAME"
-- mongodb_atlas_database_user_password = "DEFINE_MY_PASSWORD"
+```
+public_key = "ATLAS_PRIVATE_KEY"
+private_key  = "ATLAS_PRIVATE_KEY"
+atlasprojectid = "ATLAS_PROJECT_ID"
+cluster_region = "EU-WEST-3"
+atlas_provider_name = "AWS"
+atlas_provider_instance_size_name = "M10"
+auto_scaling_disk_gb_enabled = true
+mongo_db_major_version       = "4.4"
+mongodb_atlas_database_username = "DEFINE_MY_USERNAME"
+mongodb_atlas_database_user_password = "DEFINE_MY_PASSWORD"
 
 
 
 Copy the stuff from the url from “v2/” until “#”
 
 
-Then create another file “main.tf”
+Then create “main.tf” file:
 
+```
 # Adding this conf. if terraform v0.13+
 terraform {
  required_providers {
@@ -98,9 +100,13 @@ resource "mongodbatlas_database_user" "eugenetest" {
    database_name = "eugeneDB"
  }
 }
+```
 
 Change all “_name_” to your own
-Create a new file “variables.tf” with this:
+
+Create the “variables.tf” file:
+
+```
 # The  public API key for MongoDB Atlas
 variable "public_key" {
   description = "The public API key for MongoDB Atlas"
@@ -141,8 +147,11 @@ variable "mongodb_atlas_database_user_password"{
 }
 
 #Then once the files have been created, navigate to the folder and run these 3 commands
+
+```
 Run the command “terraform init”
 Run the command “terraform plan”
 Run the commande “terraform apply”
+```
 
 
