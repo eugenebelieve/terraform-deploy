@@ -47,7 +47,7 @@ Copy the stuff from the url from “v2/” until “#”
 Then create “main.tf” file:
 
 ```
-# Adding this conf. if terraform v0.13+
+&#35; Adding this conf. if terraform v0.13+
 terraform {
  required_providers {
    mongodbatlas = {
@@ -56,16 +56,16 @@ terraform {
    }
  }
 }
-#
-# Configure the MongoDB Atlas Provider
-#
+&#35;
+&#35; Configure the MongoDB Atlas Provider
+&#35;
 provider "mongodbatlas" {
  public_key  = var.public_key
  private_key = var.private_key
 }
-#
-# Create a Shared Tier Cluster
-#
+&#35;
+&#35; Create a Shared Tier Cluster
+&#35;
 resource "mongodbatlas_cluster" "testing-terraform" {
  project_id              = var.atlasprojectid
  name                    = "testing-terraform"
@@ -79,13 +79,13 @@ resource "mongodbatlas_cluster" "testing-terraform" {
  provider_instance_size_name = var.atlas_provider_instance_size_name
  provider_region_name        = var.cluster_region
  }
-# Use terraform output to display connection strings.
+&#35; Use terraform output to display connection strings.
 output "connection_strings" {
 value = mongodbatlas_cluster.eugene-terraform.connection_strings
 }
-#
-# Create an Atlas Admin Database User
-#
+&#35;
+&#35; Create an Atlas Admin Database User
+&#35;
 resource "mongodbatlas_database_user" "eugenetest" {
  username           = var.mongodb_atlas_database_username
  password           = var.mongodb_atlas_database_user_password
@@ -107,27 +107,27 @@ Change all “_name_” to your own
 Create the “variables.tf” file:
 
 ```
-# The  public API key for MongoDB Atlas
+&#35; The  public API key for MongoDB Atlas
 variable "public_key" {
   description = "The public API key for MongoDB Atlas"
 }
-# The  public API key for MongoDB Atlas
+&#35; The  public API key for MongoDB Atlas
 variable "private_key" {
   description = "The private API key for MongoDB Atlas"
 }
-#The Atlas Project ID used to create the cluster 
+&#35;The Atlas Project ID used to create the cluster 
 variable "atlasprojectid" {
     description = "The Atlas Project ID used to create the cluster "
 }
-#The Atlas Project cluster region 
+&#35;The Atlas Project cluster region 
 variable "cluster_region" {
     description = "The Atlas Project cluster region"
 }
-#The Atlas cloud provider_name
+&#35;The Atlas cloud provider_name
 variable "atlas_provider_name" {
     description = "The Atlas cloud provider name"
 }
-# The Atlas provider instance size name
+&#35; The Atlas provider instance size name
 variable "atlas_provider_instance_size_name"{
     description = "The Atlas provider instance size name"
 }
@@ -135,7 +135,7 @@ variable "atlas_provider_instance_size_name"{
 variable "auto_scaling_disk_gb_enabled"{
     description = "auto scaling option"
 }
-# the version of Mongodb 
+&#35; the version of Mongodb 
 variable "mongo_db_major_version"{
     description = "the MongoDB Version"
 }
