@@ -9,16 +9,18 @@ brew install terraform
 Create a file called terraform.tfvars and open it in text editor (open -e terraform..)
 Copy this stuff inside
 
-- public_key = “############”
-- private_key  = “#############”
-- atlasprojectid = “ATLAS_PROJECT_ID”
-- cluster_region = “EU-WEST-3"
-- atlas_provider_name = “AWS”
-- atlas_provider_instance_size_name = “M10"
-- auto_scaling_disk_gb_enabled = true
-- mongo_db_major_version   	= “4.4”
-- mongodb_atlas_database_username = “****”
-- mongodb_atlas_database_user_password = “*****”
+```
+public_key = “############”
+private_key  = “#############”
+atlasprojectid = “ATLAS_PROJECT_ID”
+cluster_region = “EU-WEST-3"
+atlas_provider_name = “AWS”
+atlas_provider_instance_size_name = “M10"
+auto_scaling_disk_gb_enabled = true
+mongo_db_major_version   	= “4.4”
+mongodb_atlas_database_username = “****”
+mongodb_atlas_database_user_password = “*****”
+
 
 Get a api key and then fill in the param file (previously created)
 
