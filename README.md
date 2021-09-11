@@ -14,7 +14,7 @@ brew install terraform
  Inside Atlas create an API with public and private keys 
 
 
-## Create a the terraform.tfvars file and copy the following 
+## Create a the "terraform.tfvars" file and copy the following 
 
 Create an API key inside MongoDB Atlas
 
