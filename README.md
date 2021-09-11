@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="dashboard" width="600">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="dashboard" width="800">
 
 
 # Scripts to Deploy MongoDB with Terraform
