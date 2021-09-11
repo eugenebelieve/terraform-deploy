@@ -35,7 +35,7 @@ mongodb_atlas_database_username = "DATABASE_USERNAME"
 mongodb_atlas_database_user_password = "DATABASE_PASSWORD"
 ```
 
-You can change the cluster region, provider, instance size, backups enabled, mongodb version etc in the file.
+You can also change the cluster region, provider, instance size, backups enabled, mongodb version etc or keep the same ones
 
 ## Then create <strong>“main.tf”</strong> file and change all “\_NAME_” to your own
 
