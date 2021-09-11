@@ -30,7 +30,7 @@ mongodb_atlas_database_username = “****”
 mongodb_atlas_database_user_password = “*****”
 ```
 
-Get a api key and then fill in the param file (previously created)
+You can change the cluster region, provider, instance size, backups enabled, mongodb version etc in the file.
 
 
 ## Replace the public and private key and the atlasprojectId:
