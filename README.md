@@ -30,7 +30,7 @@ mongodb_atlas_database_user_password = “*****”
 Get a api key and then fill in the param file (previously created)
 
 
-Replace the public and private key and the atlasprojectId:
+## Replace the public and private key and the atlasprojectId:
 
 ```
 public_key = "ATLAS_PRIVATE_KEY"
@@ -45,7 +45,7 @@ mongodb_atlas_database_username = "DEFINE_MY_USERNAME"
 mongodb_atlas_database_user_password = "DEFINE_MY_PASSWORD"
 ```
 
-Then create “main.tf” file and change all “_NAME_” to your own
+## Then create <strong>“main.tf”</strong> file and change all “\_NAME_” to your own
 
 ```
 terraform {
@@ -97,7 +97,7 @@ resource "mongodbatlas_database_user" "_NAME_" {
 ```
 
 
-Create the “variables.tf” file:
+## Create the “variables.tf” file with the following content:
 
 ```
 variable "public_key" {
