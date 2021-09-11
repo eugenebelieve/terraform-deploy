@@ -2,15 +2,17 @@
 Deploying a MongoDB cluster on Atlas using Terraform
 
 
-Installing Terraform
+## Installing Terraform
 
 ```
 brew install terraform
 ```
 
-Inside Atlas create your public and private API keys 
 
-Create a the terraform.tfvars file and copy the following 
+### Inside Atlas create your public and private API keys 
+
+
+## Create a the terraform.tfvars file and copy the following 
 
 ```
 public_key = “############”
@@ -130,12 +132,16 @@ variable "mongodb_atlas_database_user_password"{
 }
 ```
 
-#Then once the files have been created, navigate to the folder and run these 3 commands
+## Then once the files have been created, in the terminal run these 3 commands
 
 ```
-Run the command “terraform init”
-Run the command “terraform plan”
-Run the commande “terraform apply”
+$ terraform init
+```
+```
+$ terraform plan
+```
+```
+$ terraform apply
 ```
 
 
