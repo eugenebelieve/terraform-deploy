@@ -11,8 +11,7 @@ Deploying, replicating, sharding MongoDB Clusters on Atlas with the help of Terr
 brew install terraform
 ```
 
-
-### Inside Atlas create an API with public and private keys 
+ Inside Atlas create an API with public and private keys 
 
 
 ## Create a the terraform.tfvars file and copy the following 
