@@ -17,10 +17,14 @@ brew install terraform
 
 ## Create a the terraform.tfvars file and copy the following 
 
+Create an API key inside Atlas
+
+You need to insert the ATLAS_PRIVATE_KEY, ATLAS_PRIVATE_KEY and ATLAS_PROJECT_ID
+
 ```
-public_key = “############”
-private_key  = “#############”
-atlasprojectid = “ATLAS_PROJECT_ID”
+public_key = "ATLAS_PRIVATE_KEY"
+private_key  = "ATLAS_PRIVATE_KEY"
+atlasprojectid = "ATLAS_PROJECT_ID"
 cluster_region = “EU-WEST-3"
 atlas_provider_name = “AWS”
 atlas_provider_instance_size_name = “M10"
@@ -31,22 +35,6 @@ mongodb_atlas_database_user_password = “*****”
 ```
 
 You can change the cluster region, provider, instance size, backups enabled, mongodb version etc in the file.
-
-
-## Replace the public and private key and the atlasprojectId:
-
-```
-public_key = "ATLAS_PRIVATE_KEY"
-private_key  = "ATLAS_PRIVATE_KEY"
-atlasprojectid = "ATLAS_PROJECT_ID"
-cluster_region = "EU-WEST-3"
-atlas_provider_name = "AWS"
-atlas_provider_instance_size_name = "M10"
-auto_scaling_disk_gb_enabled = true
-mongo_db_major_version       = "4.4"
-mongodb_atlas_database_username = "DEFINE_MY_USERNAME"
-mongodb_atlas_database_user_password = "DEFINE_MY_PASSWORD"
-```
 
 ## Then create <strong>“main.tf”</strong> file and change all “\_NAME_” to your own
 
