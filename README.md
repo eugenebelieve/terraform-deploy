@@ -1,7 +1,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="dashboard" width="800">
 
 
-# Scripts to Deploy MongoDB with Terraform
+# Deploy MongoDB Cluster with Terraform
 Deploying a MongoDB cluster on Atlas using Terraform
 
 
