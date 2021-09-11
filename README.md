@@ -86,7 +86,8 @@ resource "mongodbatlas_database_user" "_NAME_" {
  }
 }
 ```
-
+You can also change the number of shards for Horiztonal Scaling <br />
+and the replication factor for High Availability
 
 ## Create the “variables.tf” file with the following content:
 
