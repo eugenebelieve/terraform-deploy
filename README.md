@@ -125,6 +125,8 @@ variable "mongodb_atlas_database_user_password"{
 
 ## Then once the files have been created, in the terminal run these 3 commands
 
+The 3 files your previously created should be in the same folder, from which you'll execute these commands
+
 ```
 $ terraform init
 ```
