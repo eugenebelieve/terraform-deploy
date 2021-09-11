@@ -2,7 +2,7 @@
 
 
 # Deploy MongoDB Cluster with Terraform
-Deploying a MongoDB cluster on Atlas using Terraform
+Deploying, replicating, sharding MongoDB Clusters on Atlas with the help of Terraform
 
 
 ## Installing Terraform
