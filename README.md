@@ -19,7 +19,7 @@ brew install terraform
 
 Create an API key inside MongoDB Atlas
 
-You need to insert the ATLAS_PRIVATE_KEY, ATLAS_PRIVATE_KEY and ATLAS_PROJECT_ID \n
+You need to insert the ATLAS_PRIVATE_KEY, ATLAS_PRIVATE_KEY and ATLAS_PROJECT_ID <br />
 and definie DATABASE_USERNAME and DATABASE_PASSWORD
 
 ```
