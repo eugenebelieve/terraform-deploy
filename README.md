@@ -1,7 +1,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="dashboard" width="800">
 
 
-# Deploy MongoDB Cluster with Terraform
+# Deploy MongoDB Clusters with Terraform
 Deploying, replicating, sharding MongoDB Clusters on Atlas with the help of Terraform
 
 
