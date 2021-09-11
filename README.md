@@ -4,10 +4,12 @@ Deploying a MongoDB cluster on Atlas using Terraform
 
 Installing Terraform
 
-
+```
 brew install terraform
-Create a file called terraform.tfvars and open it in text editor (open -e terraform..)
-Copy this stuff inside
+```
+
+
+Create a the terraform.tfvars file and copy the following 
 
 ```
 public_key = “############”
@@ -47,7 +49,6 @@ Copy the stuff from the url from “v2/” until “#”
 Then create “main.tf” file:
 
 ```
-&#35; Adding this conf. if terraform v0.13+
 terraform {
  required_providers {
    mongodbatlas = {
@@ -56,16 +57,12 @@ terraform {
    }
  }
 }
-&#35;
-&#35; Configure the MongoDB Atlas Provider
-&#35;
+
 provider "mongodbatlas" {
  public_key  = var.public_key
  private_key = var.private_key
 }
-&#35;
-&#35; Create a Shared Tier Cluster
-&#35;
+
 resource "mongodbatlas_cluster" "testing-terraform" {
  project_id              = var.atlasprojectid
  name                    = "testing-terraform"
@@ -79,13 +76,11 @@ resource "mongodbatlas_cluster" "testing-terraform" {
  provider_instance_size_name = var.atlas_provider_instance_size_name
  provider_region_name        = var.cluster_region
  }
-&#35; Use terraform output to display connection strings.
+
 output "connection_strings" {
 value = mongodbatlas_cluster.eugene-terraform.connection_strings
 }
-&#35;
-&#35; Create an Atlas Admin Database User
-&#35;
+
 resource "mongodbatlas_database_user" "eugenetest" {
  username           = var.mongodb_atlas_database_username
  password           = var.mongodb_atlas_database_user_password
