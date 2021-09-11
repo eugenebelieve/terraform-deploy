@@ -20,6 +20,7 @@ brew install terraform
 Create an API key inside MongoDB Atlas
 
 You need to insert the ATLAS_PRIVATE_KEY, ATLAS_PRIVATE_KEY and ATLAS_PROJECT_ID
+and definie DATABASE_USERNAME and DATABASE_PASSWORD
 
 ```
 public_key = "ATLAS_PRIVATE_KEY"
@@ -30,8 +31,8 @@ atlas_provider_name = “AWS”
 atlas_provider_instance_size_name = “M10"
 auto_scaling_disk_gb_enabled = true
 mongo_db_major_version   	= “4.4”
-mongodb_atlas_database_username = “****”
-mongodb_atlas_database_user_password = “*****”
+mongodb_atlas_database_username = "DATABASE_USERNAME"
+mongodb_atlas_database_user_password = "DATABASE_PASSWORD"
 ```
 
 You can change the cluster region, provider, instance size, backups enabled, mongodb version etc in the file.
