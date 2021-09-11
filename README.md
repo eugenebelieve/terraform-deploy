@@ -1,4 +1,4 @@
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FFichier%3ATerraform_Logo.svg&psig=AOvVaw3its6JIt7hinG5AI9t7Aj5&ust=1631477152177000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIjLqpTc9_ICFQAAAAAdAAAAABAJ" alt="dashboard" height="400">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" alt="dashboard" height="400">
 
 
 # Scripts to Deploy MongoDB with Terraform
