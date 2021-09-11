@@ -12,7 +12,7 @@ brew install terraform
 ```
 
 
-### Inside Atlas create your public and private API keys 
+### Inside Atlas an API with public and private keys 
 
 
 ## Create a the terraform.tfvars file and copy the following 
